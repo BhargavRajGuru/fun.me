@@ -1,0 +1,41 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: ⚛️ Recursos FiQ
+    url: recursos-fisica-quimica/
+    identifier: recursos-fiq
+    weight: 1
+  - name: 📚 Apunts
+    url: recursos-fisica-quimica/apunts
+    parent: recursos-fiq
+    weight: 1
+  - name: 🎓 PAU/PBAU
+    url: recursos-fisica-quimica/pau-pbau
+    parent: recursos-fiq
+    weight: 2  
+  - name: 🤝 Tutorials
+    url: tutorials/  
+    identifier: tutorials
+    weight: 2
+  - name: LaTeX
+    parent: tutorials
+    url: tutorials/latex
+    weight: 1
+  - name: Presentació d'informació
+    parent: tutorials
+    url: tutorials/presentacio-informacio
+    weight: 2    
+  - name: 🔗 Recursos online
+    url: recursos-online/
+    identifier: recursos-online
+    weight: 4 
+  - name: ✍️ Blog
+    url: /blog
+    weight: 5      
+  - name: 👥 Equip
+    url: equip/
+    identifier: equip
+    weight: 6

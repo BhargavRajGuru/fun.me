@@ -1,0 +1,161 @@
+{{ if ne .Params.share false }}
+<div class="subscribe-box" aria-hidden="true">
+	<div align="center">
+		<h3>
+			{{ if eq .Site.Language.Lang "es" }}
+			¿Te ha gustado?
+			{{ else if eq .Site.Language.Lang "en" }}
+			Did you like it?
+			{{ else if eq .Site.Language.Lang "ca" }}
+			T'ha agradat?
+			{{ end }}
+		</h3>
+	</div>
+	<ul class=subscribe>
+		<li>
+		{{- $coffee_image := resources.Get ("media/coffee.svg") -}}
+		{{ if eq .Site.Language.Lang "es" }}
+		<div align="center">
+        <a href="https://www.paypal.com/donate/?business=5DYE3DLPRQTQG&no_recurring=0&item_name=¡Gracias%21+Con+tu+contribución+estás+ayudando+a+que+FisiQu%C3%ADmicamente+siga+mejorando.&currency_code=EUR" target="_blank" rel="noopener">
+			<span data-toggle="tooltip" data-placement="right" title aria-label="PayPal" data-original-title="Invítanos a un café" class="fa-2x">☕</span>
+		</a>
+		</div>
+		{{ else if eq .Site.Language.Lang "en" }}
+		<div align="center">
+        <a href="https://www.paypal.com/donate/?business=5DYE3DLPRQTQG&no_recurring=0&item_name=Thank+you%21+With+your+contribution+you+are+helping+PhysiChemically+continue+to+improve.&currency_code=EUR" target="_blank" rel="noopener">
+			<span data-toggle="tooltip" data-placement="right" title aria-label="PayPal" data-original-title="Buy us a coffee" class="fa-2x">☕</span>			
+		</a>
+		</div>
+		{{ else if eq .Site.Language.Lang "ca" }}
+		<div align="center">
+        <a href="https://www.paypal.com/donate/?business=5DYE3DLPRQTQG&no_recurring=0&item_name=Gr%C3%A0cies%21+Amb+la+teva+contribuci%C3%B3+est%C3%A0s+ajudant+que+FisiQu%C3%ADmicament+segueixi+millorant.&currency_code=EUR" target="_blank" rel="noopener">
+			<span data-toggle="tooltip" data-placement="right" title aria-label="PayPal" data-original-title="Invítanos a un cafè" class="fa-2x">☕</span>			
+		</a>
+		</div>
+		{{ end }}
+		</li>
+	</ul>
+	  <p class="kudos">
+	  {{ if eq .Site.Language.Lang "es" }}
+	  Invitándonos a un café estás reconociendo y alabando nuestro esfuerzo, animándonos a seguir preparando materiales de calidad. Todos los <em>cafés</em> se destinarán a costear y seguir mejorando <a href="/"><img draggable="false" class="icon" alt="fisiquimicamente" src="/icon/logo-fisiquimicamente.svg" id="fisiquimicamente"></a>.
+		<script>
+			document.addEventListener('wcThemeChange', (e) => {
+			  // console.log('isDarkTheme? ' + e.detail.isDarkTheme());
+			  if (e.detail.isDarkTheme()) {
+				document.getElementById("fisiquimicamente").src="/icon/logo-fisiquimicamente-dark.svg";
+			  } else {
+				document.getElementById("fisiquimicamente").src="/icon/logo-fisiquimicamente.svg";
+			  }
+			  });
+		</script>
+	  {{ else if eq .Site.Language.Lang "en" }}
+	  Inviting us to a coffee you are acknowledging and praising our effort, encouraging us to continue preparing quality materials. All the <em>coffees</em> will be used to pay for and to continue improving <a href="/"><img draggable="false" class="icon" alt="physichemically" src="/icon/logo-physichemically.svg" id="physichemically"></a>.
+		<script>
+			document.addEventListener('wcThemeChange', (e) => {
+			  // console.log('isDarkTheme? ' + e.detail.isDarkTheme());
+			  if (e.detail.isDarkTheme()) {
+				document.getElementById("physichemically").src="/icon/logo-physichemically-dark.svg";
+			  } else {
+				document.getElementById("physichemically").src="/icon/logo-physichemically.svg";
+			  }
+			  });
+		</script>
+	{{ else if eq .Site.Language.Lang "ca" }}
+	Convidant-nos a un cafè estàs reconeixent i lloant el nostre esforç, animant-nos a seguir preparant materials de qualitat. Tots els <em>cafès</em> es destinaran a pagar i seguir millorant <a href="/"><img draggable="false" class="icon" alt="fisiquimicament" src="/icon/logo-fisiquimicament.svg" id="fisiquimicament"></a>.
+	<script>
+		document.addEventListener('wcThemeChange', (e) => {
+		  // console.log('isDarkTheme? ' + e.detail.isDarkTheme());
+		  if (e.detail.isDarkTheme()) {
+			document.getElementById("fisiquimicament").src="/icon/logo-fisiquimicament-dark.svg";
+		  } else {
+			document.getElementById("fisiquimicament").src="/icon/logo-fisiquimicament.svg";
+		  }
+		  });
+	</script>
+	{{ end }}
+  </p>
+</div>
+
+<div class="share-box">
+	<div align="center">
+		<h3>
+			{{ if eq .Site.Language.Lang "es" }}
+			Compártelo
+			{{ else if eq .Site.Language.Lang "en" }}
+			Share it
+			{{ else if eq .Site.Language.Lang "ca" }}
+			Comparteix-ho
+			{{ end }}
+		</h3>
+	</div>	
+  <ul class="share">
+	  {{/*  <script async defer src="https://teams.microsoft.com/share/launcher.js"></script>
+	  <li data-toggle="tooltip" data-placement="bottom" title="Teams" class="teams-share-button" data-href="{{ $.Permalink }}" data-icon-px-size="30"></li>
+	  <script src="https://apis.google.com/js/platform.js" async defer></script>	  
+	  <li data-toggle="tooltip" data-placement="bottom" title="Classroom"><g:sharetoclassroom url="{{ $.Permalink }}" size="30"></g:sharetoclassroom></li>  */}}
+    {{ range where site.Data.page_sharer.buttons "enable" true }}
+      {{ $pack := or .icon_pack "fas" }}
+      {{ $pack_prefix := $pack }}
+      {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+        {{ $pack_prefix = "fa" }}
+      {{ end }}
+      {{/* Utilise `urlquery` over `htmlEscape` to encode sharing URL */}}
+      {{/* See https://github.com/wowchemy/wowchemy-hugo-themes/pull/2726 */}}
+      {{ $link := replace .url "{url}" ($.Permalink | urlquery) }}
+      {{ $link = replace $link "{title}" ($.Title | urlquery) }}
+      {{/* Workaround `urlquery` encoding for mailto as `urlquery` encodes `+` as `%2B` and ` ` (space) as `+` */}}
+      {{ if eq (urls.Parse $link).Scheme "mailto" }}
+        {{ $link = replace $link "+" "%20" }}
+      {{ end }}
+      <li>
+        <a href="{{$link|safeURL}}" data-toggle="tooltip" data-placement="bottom" title aria-label="{{.title}}" data-original-title="{{.title}}" target="_blank" rel="noopener" class="share-btn-{{.id}}" aria-label="{{.icon}}">
+		{{ if eq $pack "emoji" }}
+            {{- .icon | markdownify | emojify -}}
+          {{ else if eq $pack "svg" }}
+            {{- $svg_icon := resources.Get (printf "media/icons/%s.png" .icon) | default (resources.Get (printf "media/icons/%s.svg" .icon)) -}}
+            <img src="{{ $svg_icon.RelPermalink }}" alt="{{ .icon }}" class="svg-icon svg-baseline" loading="lazy">
+          {{ else }}
+		  	<i class="{{$pack}} {{$pack_prefix}}-{{.icon}}"></i>
+          {{ end }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>  	  
+</div>
+
+<div class="share-box">
+	<div align="center">
+		<h3>
+			{{ if eq .Site.Language.Lang "es" }}
+			Suscríbete
+			{{ else if eq .Site.Language.Lang "en" }}
+			Subscribe
+			{{ else if eq .Site.Language.Lang "ca" }}
+			Subscriu-te
+			{{ end }}
+		</h3>
+	</div>
+	<ul class=share>
+		<li>
+	        <a href="https://t.me/fisiquimicamente" target="_blank" rel="noopener">
+				<img data-toggle="tooltip" data-placement="left" title="Telegram" src="/icon/telegram.svg" alt="telegram" class="svg-icon svg-baseline">
+			</a>
+		</li>		
+		<li>
+	        <a href="{{ "/index.xml" | absLangURL }}" target="_blank" rel="noopener">
+				<img data-toggle="tooltip" data-placement="right" title="RSS" src="/icon/RSS.svg" alt="RSS" class="svg-icon svg-baseline">
+			</a>
+		</li>
+	</ul>
+	  <p class="kudos">
+	  {{ if eq .Site.Language.Lang "es" }}
+		Si no quieres perderte ninguna <strong>actualización</strong> considera suscribirte al canal de <img draggable="false" class="icon" alt="telegram" src="/icon/telegram.svg"> <strong>Telegram</strong> o al canal <img draggable="false" class="icon" alt="RSS" src="/icon/RSS.svg"> <strong>RSS</strong>.
+	  {{ else if eq .Site.Language.Lang "en" }}
+		If you don't want to miss any <strong>updates</strong> consider subscribing to the <img draggable="false" class="icon" alt="telegram" src="/icon/telegram.svg"> <strong>Telegram</strong> channel (in Spanish) or the <img draggable="false" class="icon" alt="RSS" src="/icon/RSS.svg"> <strong>RSS</strong> channel.
+	{{ else if eq .Site.Language.Lang "ca" }}
+		Si no et vols perdre cap <strong>actualització</strong> considera subscriure'ta canal de <img draggable="false" class="icon" alt="telegram" src="/icon/telegram.svg"> <strong>Telegram</strong> (en espanyol) o al canal <img draggable="false" class="icon" alt="RSS" src="/icon/RSS.svg"> <strong>RSS</strong>. 		
+	{{ end }}				  
+  </p>
+</div>
+
+{{ end }}
