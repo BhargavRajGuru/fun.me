@@ -25,3 +25,12 @@
   for = "index.xml"
   [headers.values]
     Content-Type = "application/rss+xml"
+
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"  
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  [plugins.inputs.settings]
+    locale = "es" # generates Lighthouse reports in Español
