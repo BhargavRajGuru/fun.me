@@ -63,6 +63,12 @@
   status = 301
 
 [[redirects]]
+  from = "/en/*"
+  to = "https://physichemically.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/ca/*"
   to = "https://fisiquimicament.com/:splat"
   status = 301
