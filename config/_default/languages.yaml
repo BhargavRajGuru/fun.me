@@ -1,14 +1,14 @@
 # Español
 es:
   baseURL: 'https://fisiquimicamente.com/'
-  weight: 1
+  weight: 2
   languageCode: es
   contentDir: content/es  
 
 # Inglés
 en:
   baseURL: 'https://bhargavrajyaguru.in/'
-  weight: 2
+  weight: 1
   languageCode: en
   contentDir: content/en
   title: PhysiChemically
