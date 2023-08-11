@@ -64,7 +64,7 @@
 
 [[redirects]]
   from = "/en/*"
-  to = "https://bhargavrajyaguru.in/:splat"
+  to = "https://physichemically.com/:splat"
   status = 301
   force = true
 
