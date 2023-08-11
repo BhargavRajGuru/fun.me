@@ -62,11 +62,11 @@
   to = "/recursos-fisica-quimica/apuntes/formulacion-nomenclatura-quimica/organica/:splat"
   status = 301
 
-[[redirects]]
-  from = "/en/*"
-  to = "https://bhargavrajyaguru.in/:splat"
-  status = 301
-  force = true
+#[[redirects]]
+#  from = "/en/*"
+#  to = "https://physichemically.com/:splat"
+#  status = 301
+#  force = true
 
 [[redirects]]
   from = "/ca/*"
