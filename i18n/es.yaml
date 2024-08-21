@@ -1,0 +1,277 @@
+# Navigation
+
+- id: toggle_navigation
+  translation: Barra de navegación
+- id: table_of_contents
+  translation: Índice
+- id: on_this_page
+  translation: En esta página
+- id: back_to_top
+  translation: Regreso al inicio
+- id: home
+  translation: Inicio
+- id: close
+  translation: Cerrar
+- id: languages
+  translation: Idiomas
+
+# General
+
+- id: related
+  translation: Relacionado
+- id: minute_read
+  translation: min de lectura
+- id: previous
+  translation: Anterior
+- id: next
+  translation: Siguiente
+- id: figure
+  translation: "Figura %d:"
+- id: edit_page
+  translation: Edita esta página
+
+# Themes
+
+- id: theme_selector
+  translation: Mostrar preferencias
+- id: theme_light
+  translation: Claro
+- id: theme_dark
+  translation: Oscuro
+- id: theme_auto
+  translation: Automático
+
+# Buttons
+
+- id: btn_preprint
+  translation: Prepublicación
+- id: btn_pdf
+  translation: PDF
+- id: btn_cite
+  translation: Citar
+- id: btn_slides
+  translation: Diapositivas
+- id: btn_video
+  translation: Vídeo
+- id: btn_code
+  translation: Código fuente
+- id: btn_dataset
+  translation: Datos
+- id: btn_project
+  translation: Proyecto
+- id: btn_poster
+  translation: Póster
+- id: btn_source
+  translation: Documento fuente
+- id: btn_copy
+  translation: Copiar
+- id: btn_copied
+  translation: Copiado
+- id: btn_download
+  translation: Descargar
+- id: btn_text
+  translation: Texto
+
+# About widget
+
+- id: interests
+  translation: Intereses
+- id: education
+  translation: Formación
+- id: user_profile_latest
+  translation: Recientes
+
+# Accomplishments widget
+
+- id: see_certificate
+  translation: Ver certificado
+
+# Experience widget
+
+- id: present
+  translation: Actualmente
+
+# Pages widget
+
+- id: more_pages
+  translation: Ver todo
+- id: more_posts
+  translation: Más entradas
+- id: more_talks
+  translation: Más eventos
+- id: more_publications
+  translation: Más publicaciones
+
+# Contact widget
+
+- id: contact_name
+  translation: Nombre
+- id: contact_email
+  translation: Email
+- id: contact_message
+  translation: Mensaje
+- id: contact_attachment
+  translation: Adjuntar fichero
+- id: contact_send
+  translation: Enviar
+- id: book_appointment
+  translation: Solicitar una cita
+
+# Publication/Event details
+
+- id: abstract
+  translation: Resumen
+- id: publication
+  translation: Publicación
+- id: publication_type
+  translation: Tipo
+- id: date
+  translation: Fecha
+- id: last_updated
+  translation: 📆
+- id: last_edit
+  translation: "✍️ Última edición: "
+- id: event
+  translation: Evento
+- id: location
+  translation: Localización
+- id: pub_paper_conference
+  translation: Artículo de conferencia
+- id: pub_article_journal
+  translation: Artículo de revista
+- id: pub_article
+  translation: Prepublicación
+- id: pub_report
+  translation: Informe
+- id: pub_book
+  translation: Libro
+- id: pub_chapter
+  translation: Capítulo de libro
+- id: pub_thesis
+  translation: Tesis
+- id: pub_patent
+  translation: Patente
+
+# Project details
+
+- id: open_project_site
+  translation: Ir al enlace
+
+# Default titles for archive pages
+
+- id: posts
+  translation: ✍️ Blog
+- id: publications
+  translation: Publicaciones
+- id: talks
+  translation: Eventos
+- id: projects
+  translation: Proyectos
+- id: apuntes-segundo-tercero-eso
+  translation: 📚 Apuntes 2.º ESO &ndash; 3.º ESO
+- id: apuntes-cuarto-eso
+  translation: 📚 Apuntes 4.º ESO
+- id: apuntes-primero-bach
+  translation: 📚 Apuntes 1.º Bach
+- id: apuntes-segundo-bach-fisica
+  translation: 📚 Apuntes 2.º Bach Física
+- id: apuntes-segundo-bach-quimica
+  translation: 📚 Apuntes 2.º Bach Química
+- id: apuntes-formulacion
+  translation: 📚 Apuntes Formulación Nomenclatura Química
+- id: actividades-segundo-tercero-eso
+  translation: 🗒️ Actividades 2.º ESO &ndash; 3.º ESO
+- id: actividades-cuarto-eso
+  translation: 🗒️ Actividades 4.º ESO
+- id: actividades-primero-bach
+  translation: 🗒️ Actividades 1.º Bach
+- id: actividades-segundo-bach-fisica
+  translation: 🗒️ Actividades 2.º Bach Física
+- id: actividades-segundo-bach-quimica
+  translation: 🗒️ Actividades 2.º Bach Química
+- id: actividades-formulacion
+  translation: 🗒️ Actividades Formulación Nomenclatura Química
+- id: juegos-segundo-tercero-eso
+  translation: 🧩 Juegos 2.º ESO &ndash; 3.º ESO
+- id: juegos-cuarto-eso
+  translation: 🧩 Juegos 4.º ESO
+- id: juegos-primero-bach
+  translation: 🧩 Juegos 1.º Bach
+- id: juegos-segundo-bach-fisica
+  translation: 🧩 Juegos 2.º Bach Física
+- id: juegos-segundo-bach-quimica
+  translation: 🧩 Juegos 2.º Bach Química
+- id: juegos-formulacion
+  translation: 🧩 Juegos Formulación Nomenclatura Química
+- id: practicas-segundo-tercero-eso
+  translation: 🧪 Prácticas 2.º ESO &ndash; 3.º ESO
+- id: practicas-cuarto-eso
+  translation: 🧪 Prácticas 4.º ESO
+- id: practicas-primero-bach
+  translation: 🧪 Prácticas 1.º Bach
+- id: practicas-segundo-bach-fisica
+  translation: 🧪 Prácticas 2.º Bach Física
+- id: practicas-segundo-bach-quimica
+  translation: 🧪 Prácticas 2.º Bach Química
+- id: practicas-formulacion
+  translation: 🧪 Prácticas Formulación Nomenclatura Química
+- id: slides
+  translation: 🧑‍🏫 Diapositivas
+- id: authors
+  translation: 👥 Autores
+- id: tutoriales
+  translation: 🤝 Tutoriales
+- id: recursos-online
+  translation: 💻 Recursos online
+
+# Search
+
+- id: search
+  translation: Buscar
+- id: search_placeholder
+  translation: Buscar...
+- id: search_results
+  translation: resultados encontrados
+- id: search_no_results
+  translation: No se encontraron resultados
+- id: search_common_queries
+  translation: Búsquedas comunes
+
+# Error 404
+
+- id: page_not_found
+  translation: Página no encontrada
+- id: 404_recommendations
+  translation: ¿Buscabas una de estas?
+
+# Cookie consent
+
+- id: cookie_message
+  translation: Este sitio web utiliza 🍪 cookies para garantizar una mejor experiencia.
+- id: cookie_dismiss
+  translation: ¡Entendido!
+- id: cookie_learn
+  translation: Más información
+
+# Published with
+
+- id: published_with
+  translation: Publicado con {hugoblox} — el constructor de sitios web gratuito y {repo_link}de código abierto{/repo_link} para {hugo}.
+
+# Paypal
+- id: paypal
+  translation: Invítanos a un café
+
+# Feedback widget
+
+- id: feedback_widget_title
+  translation: Feedback
+
+- id: feedback_widget_question
+  translation: ¿Te ha resultado útil esta página?
+
+- id: feedback_widget_answer_positive
+  translation: 😍 Sí
+
+- id: feedback_widget_answer_negative
+  translation: 😡 No

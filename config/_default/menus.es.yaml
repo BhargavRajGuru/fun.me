@@ -1,0 +1,73 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: 💼 Recursos FyQ
+    url: recursos-fisica-quimica/
+    identifier: recursos-fyq
+    weight: 1
+  - name: 📚 Apuntes
+    url: recursos-fisica-quimica/apuntes
+    parent: recursos-fyq
+    weight: 1
+  - name: 🗒️ Actividades
+    url: recursos-fisica-quimica/actividades
+    parent: recursos-fyq
+    weight: 2
+  - name: 🧩 Juegos
+    url: recursos-fisica-quimica/juegos
+    parent: recursos-fyq
+    weight: 3
+  - name: 🧪 Prácticas de laboratorio
+    url: recursos-fisica-quimica/practicas-laboratorio
+    parent: recursos-fyq
+    weight: 4
+  - name: 📖 Historia de la Ciencia
+    url: recursos-fisica-quimica/historia-ciencia
+    parent: recursos-fyq
+    weight: 5
+  - name: 🎓 EBAU
+    url: recursos-fisica-quimica/ebau
+    parent: recursos-fyq
+    weight: 6
+  - name: 🧑‍🏫 Formación del profesorado
+    url: recursos-fisica-quimica/formacion-profesorado
+    parent: recursos-fyq
+    weight: 7
+  - name: ☢️ Radiofísica
+    url: recursos-fisica-quimica/radiofisica
+    parent: recursos-fyq
+    weight: 8
+  - name: 🤝 Tutoriales
+    url: tutoriales/
+    identifier: tutoriales
+    weight: 2
+  - name: LaTeX
+    parent: tutoriales
+    url: tutoriales/latex
+    weight: 1
+  - name: Presentación de información
+    parent: tutoriales
+    url: tutoriales/presentacion-informacion
+    weight: 2
+  - name: 🔗 Enlaces de interés
+    url: enlaces-interes/
+    identifier: enlaces-interes
+    weight: 3
+  - name: 💻 Recursos online
+    url: enlaces-interes/recursos-online
+    parent: enlaces-interes
+    weight: 1
+  - name: 🤗 Páginas amigas
+    url: enlaces-interes/paginas-amigas
+    parent: enlaces-interes
+    weight: 2
+  - name: ✍️ Blog
+    url: /blog
+    weight: 4
+  - name: 👥 Equipo
+    url: equipo/
+    identifier: equipo
+    weight: 5

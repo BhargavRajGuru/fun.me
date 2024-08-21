@@ -1,0 +1,38 @@
+---
+title: Redox
+url: "physics-chemistry-notes/17-18-year-olds/chemistry/redox"
+subtitle: Redox Equilibrium and Balancing, Galvanic Cells and Electrolysis
+summary: "<code style='color: #2E3440;background:#88C0D0'>COMING SOON</code> <br> Redox Equilibrium. Redox Balancing. Galvanic Cells. Electrolysis."
+breadcrumbs: ["notes","17-18-year-olds","chemistry"]
+tags:
+- notes
+- 17-18-year-olds
+- chemical-reactions
+- redox
+categories:
+- Chemistry
+weight: 8
+
+# Optional external URL for project (replaces project detail page).
+external_link: ""
+
+image:
+  caption: Photo by [**Zdeněk Macháček**](https://unsplash.com/@zmachacek) on [Unsplash](https://unsplash.com)
+  focal_point: Smart
+
+# links:
+# - icon_pack: fas
+#   icon:
+#   name: PDF Texto
+#   url: MAS_texto.pdf
+  
+# - icon_pack: fas
+#   icon:
+#   name: Póster
+#   url: MAS_poster.pdf
+
+---
+
+{{% callout soon %}}
+Coming soon...
+{{% /callout %}}
