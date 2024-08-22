@@ -110,9 +110,11 @@
       {{ $isSVG := eq $image.MediaType.SubType "svg" }}
       {{ $animation_type := strings.TrimPrefix "." (path.Ext $image.RelPermalink) | lower }}      
 
-      {{ if eq $animation_type "json" }}        
+      {{ if eq $animation_type "json" }}  
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>      
         <lottie-player autoplay loop mode="normal" src="{{ $image.RelPermalink }}" style="width: 100%; height:auto"></lottie-player>
-      {{ else if eq $animation_type "tgs" }}        
+      {{ else if eq $animation_type "tgs" }}
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/tgs-player.js"></script>        
         <tgs-player autoplay loop mode="normal" style="width: 70%; height:auto" id="tgs-home"></tgs-player>
         <script>
           document.addEventListener('wcThemeChange', (e) => {
